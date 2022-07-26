@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#section-1{
+    background: url(/images/Ads\ Background.png);
+    background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+    padding: 20px 0;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-1 img{
+width: 530px;
+}
+
+.logo img{
+    width: 55px;
+}
+
+.add-2 img{
+    width: 530px;
+}
+
+.flex-container>a{
+    cursor: pointer;
+}
+
+/* media query 1280 device size and smaller*/
+@media only screen and (max-width: 1280px) {
+    .add-1 img{
+        width: 480px;
+        }
+        
+        .logo img{
+            width: 50px;
+        }
+        
+        .add-2 img{
+            width: 480px;
+        }
+    
+}
+
+/* media query 1120 device size and smaller*/
+@media only screen and (max-width: 1120px) {
+
+    .flex-container{
+        flex-direction: column;
+        width: 96%;
+    }
+
+    .add-1 img{
+        width:100%;
+        }
+        
+        .logo img{
+            width: 55px;
+            padding: 6px;
+        }
+        
+        .add-2 img{
+            width: 100%;
+        }
+    
+}
+
+/* media query 620 device size and smaller*/
+@media only screen and (max-width: 620px) {
+        .logo img{
+            width: 42px;
+        }
+}
+
+/* media query 400 device size and smaller*/
+@media only screen and (max-width: 400px) {
+    .logo img{
+        width: 32px;
+    }
+}
